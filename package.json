@@ -1,0 +1,29 @@
+{
+  "name": "morfology",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rustambek9997/Morfology.git"
+  },
+  "keywords": [
+    "morfology",
+    "nltk",
+    "words",
+    "nodejs",
+    "js"
+  ],
+  "author": "Rustambek Baltayev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rustambek9997/Morfology/issues"
+  },
+  "homepage": "https://github.com/Rustambek9997/Morfology#readme",
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  }
+}
