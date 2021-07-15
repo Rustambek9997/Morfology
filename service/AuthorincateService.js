@@ -11,7 +11,7 @@ class AuthorincateService {
         const candidate = await userRepo.findByToken(token)
 
         if (candidate) {
-            return models.User(candidate)
+            return new models.User(candidate)
         }
         
         throw new exceptions.UserNotFoundException(username)
