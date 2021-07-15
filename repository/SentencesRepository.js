@@ -5,7 +5,7 @@ const SENTENCE_BY_ID = "SELECT * FROM Sentences WHERE ID = ?"
 const SENTENCE_ALL = "SELECT * FROM Sentences"
 const SENTENCE_REMOVE = "DELETE FROM Sentences WHERE ID = ?"
 
-module.exports = class SentencesRepository {
+class SentencesRepository {
 
     async insert(text) {
         await db.run(SENTENCE_INSERT, [text])
@@ -23,3 +23,5 @@ module.exports = class SentencesRepository {
         await db.run(SENTENCE_REMOVE, [id])
     }
 }
+
+module.exports = new SentencesRepository()

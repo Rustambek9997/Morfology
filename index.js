@@ -1,6 +1,4 @@
-const SentencesRepository = require('./repository/SentencesRepository')
-
-const sentencesRepo = new SentencesRepository()
+const sentencesRepo =  require('./repository/SentencesRepository')
 
 async function main() {
     console.log('All Sentences:')
